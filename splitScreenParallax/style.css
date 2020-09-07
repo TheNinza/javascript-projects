@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: cover;
+  color: white;
+}
+
+.about {
+  height: 300vh;
+  display: flex;
+}
+
+.about-title {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 !important;
+}
+
+.about-pages {
+  width: 50%;
+}
+
+.about-pages div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.about-pages div > p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about-pages div:nth-child(1) {
+  background-color: rgb(56, 134, 89);
+}
+.about-pages div:nth-child(2) {
+  background-color: rgb(129, 42, 110);
+}
+.about-pages div:nth-child(3) {
+  background-color: rgb(31, 88, 107);
+}
+
+footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
