@@ -16,7 +16,7 @@ const animatedForm = () => {
         changeBackgroundColor("#74e73f");
       } else if (input.type === "password" && validateUser(input)) {
         nextSlide(parent, nextForm);
-        changeBackgroundColor("rgb(189, 87, 87)");
+        changeBackgroundColor("rgb(87, 189, 130)");
       } else {
         parent.style.animation = "shake 0.5s ease";
       }
