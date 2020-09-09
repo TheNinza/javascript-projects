@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.preload {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #77b3d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+
+.cloud1,
+.cloud2,
+.cloud3 {
+  height: 100px;
+  position: absolute;
+  right: 0;
+  animation: clouds 3s ease infinite;
+  z-index: -1;
+  opacity: 0;
+}
+
+.cloud1 {
+  top: 25%;
+  transform: translate(100%, -25%);
+}
+.cloud2 {
+  top: 50%;
+  transform: translate(50%, -25%);
+  animation-delay: 2s;
+}
+.cloud3 {
+  top: 75%;
+  transform: translate(75%, -25%);
+  animation-delay: 1.5s;
+}
+
+.airplane {
+  height: 40%;
+  animation: airplane 1s ease infinite alternate;
+}
+
+.preload h3 {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/1756325/pexels-photo-1756325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+}
+
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+@keyframes airplane {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes clouds {
+  0% {
+    right: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    right: 130%;
+    opacity: 0;
+  }
+}
