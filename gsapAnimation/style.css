@@ -105,3 +105,7 @@ nav {
 .nav-images img {
   height: 250px;
 }
+
+.nav-button {
+  cursor: pointer;
+}
