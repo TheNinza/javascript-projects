@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.distortion {
+    width: 500px;
+    height: 920px;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+.intro p {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1060px) {
+    .landing {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .distortion {
+        height: 600px;
+        width: 380px;
+    }
+    .intro {
+        padding: 0 10px;
+        text-align: center;
+    }
+    .intro h1 {
+        font-size: 30px;
+    }
+    .intro p {
+        font-size: 20px;
+    }
+}
