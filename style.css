@@ -9,13 +9,19 @@
   src: url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 }
 
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("./Snow.svg");
-  background-repeat: no-repeat center center fixed;
+  background-image: url("./image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 container {
@@ -31,8 +37,11 @@ container {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  font-family: "Italianno", cursive;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
   font-size: 3em;
   color: black;
 }
@@ -41,12 +50,12 @@ container {
   position: relative;
   width: auto;
   height: auto;
-  background: #23686e;
+  background: #04678c;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -71,6 +80,7 @@ container {
 .container .card .content {
   padding: 30px;
   text-align: center;
+  justify-content: center;
 }
 
 .container .card .content h2 {
@@ -94,7 +104,10 @@ container {
   margin-top: 15px;
   padding: 8px 15px;
   color: black;
-  font-size: large;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  text-align: center;
+  justify-content: center;
   font-family: "Italianno", cursive;
   font-weight: bold;
   text-decoration: none;
@@ -183,9 +196,4 @@ container {
   100% {
     transform: translateY(100%);
   }
-}
-
-#particles-js {
-  width: 100%;
-  height: 100%;
 }
